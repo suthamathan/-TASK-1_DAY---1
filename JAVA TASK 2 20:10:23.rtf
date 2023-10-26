@@ -1,0 +1,295 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Task 1;\
+\
+public class SumOfNumbers3  \
+\{    \
+public static void main(String args[])   \
+\{            \
+int a = 60, b = 10, c = 15, d = 23, sum, s;    \
+sum=Integer.sum(a, b);  \
+//returns the sum of x and y  \
+System.out.println("team A: " +sum);    \
+s=Integer.sum(c, d);  \
+System.out.println("team B: " +s); \
+if(sum >= s)\{\
+  System.out.println("the sum of a and b is greater than the sum of c and d"); \
+\}\
+else\{\
+    System.out.println("the sum of a and b is not greater than the sum of c and d"); \
+\}\
+\}    \
+\}   \
+\
+Output:\
+\
+team A: 70\
+team B: 38\
+the sum of a and b is greater than the sum of c and d\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Task 2;\
+\
+\
+import java.util.Scanner;\
+public class EvenOdd \{\
+\
+    public static void main(String[] args) \{\
+\
+        Scanner reader = new Scanner(System.in);\
+\
+        System.out.print("Enter a number: ");\
+        int num = reader.nextInt();\
+\
+        if(num % 2 == 0)\
+            System.out.println(num + " is even");\
+        else\
+            System.out.println(num + " is odd");\
+    \}\
+\}\
+\
+Output:\
+Enter a number: 10\
+10 is even\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Task 3;\
+\
+\
+import java.util.Scanner;\
+public class Alphabets \{\
+   public static void main(String[] args) \{\
+      char b;\
+      System.out.print("Alphabets from a to z \\n");\
+      for(b = 'a'; b <= 'z'; ++b)\
+      System.out.print(b + " ");\
+   \}\
+\}\
+\
+Output:\
+Alphabets from a to z \
+a b c d e f g h i j k l m n o p q r s t u v w x y z \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Task 4:\
+import java.util.*;  \
+class Swap_With \{  \
+    public static void main(String[] args) \{  \
+       int x, y, t;// x and y are to swap   \
+       Scanner sc = new Scanner(System.in);  \
+       System.out.println("Enter the value of X and Y");  \
+       x = sc.nextInt();  \
+       y = sc.nextInt();  \
+       System.out.println("before swapping numbers: "+x +"  "+ y);  \
+       /*swapping */  \
+       t = x;  \
+       x = y;  \
+       y = t;  \
+       System.out.println("After swapping: "+x +"   " + y);  \
+       System.out.println( );  \
+    \}    \
+\}  \
+\
+Output\
+\
+Enter the value of X and Y\
+20\
+10\
+before swapping numbers: 20  10\
+After swapping: 10   20\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Task 5;\
+\
+\
+ import java.util.Scanner;\
+\
+public class Main \{\
+\
+  public static void main(String[] args) \{\
+    Scanner scan = new Scanner(System.in);\
+    System.out.print("Enter a number: ");\
+    \
+    int num = scan.nextInt();\
+    boolean flag = false;\
+    for (int i = 2; i <= num / 2; ++i) \{\
+      // condition for nonprime number\
+      if (num % i == 0) \{\
+        flag = true;\
+        break;\
+      \}\
+    \}\
+\
+    if (!flag)\
+      System.out.println(num + " is a prime number.");\
+    else\
+      System.out.println(num + " is not a prime number.");\
+  \}\
+\}\
+\
+Output:\
+\
+Enter a number: 10\
+10 is not a prime number.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Task 6;\
+\
+\
+ import java.util.Scanner;\
+\
+\
+public class Factorial \{\
+\
+    public static void main(String[] args) \{\
+Scanner scan = new Scanner(System.in);\
+System.out.print("Enter a number for fatorial: ");\
+    int num = scan.nextInt();\
+        long factorial = 1;\
+        for(int i = 1; i <= num; ++i)\
+        \{\
+            // factorial = factorial * i;\
+            factorial *= i;\
+        \}\
+        System.out.printf("Factorial of %d = %d", num, factorial);\
+    \}\
+\}\
+Output:\
+\
+\
+Enter a number for fatorial: 10\
+Factorial of 10 = 3628800\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Task 7;\
+\
+public class LengthExample2 \{  \
+    public static void main(String[] args) \{  \
+        String str = "Guvi Geck";  \
+        if(str.length()>0) \{  \
+            System.out.println("String length is: "+str.length());  \
+        \}  \
+    \}  \
+\}  \
+\
+Output;\
+String length is: 9\
+  
+\f1\b _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0  \
+\
+TASK 8\
+\
+\
+public class ten_times \{\
+\
+    public static void main(String[] args) \{\
+\
+        for (int i = 0; i < 10; i++) \{\
+            System.out.println("Welcome to Guvi ");\
+        \}\
+\
+    \}\
+\
+\}\
+\
+OUTPUT \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+Welcome to Guvi \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Task 9;\
+\
+import java.util.Scanner;\
+class Agecheck\{\
+                public static void main(String args[])\{\
+                Scanner sc = new Scanner(System.in);\
+                System.out.println("Enter your age:");\
+                int ag = sc.nextInt();\
+                \
+                 if (ag>=1&&ag<=55)\{\
+                                System.out.println("you are not senior citizen");\
+                \}\
+            \
+                else\{\
+                                System.out.println("you are senior citizen");\}\
+                \}\
+\}\
+\
+Output\
+\
+Enter your age:\
+66\
+you are senior citizen\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 _____________________________________________________________________________________________________________________________________________________________________________________________________________
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Task 10:\
+\
+import java.util.Scanner;\
+public class Main \{\
+\
+  public static void main(String[] args) \{\
+Scanner sc = new Scanner(System.in);\
+                System.out.println("Enter your number:");\
+                int num = sc.nextInt();\
+    int count = 0;\
+\
+    while (num != 0) \{\
+      // num = num/10\
+      num /= 10;\
+      ++count;\
+    \}\
+\
+    System.out.println("Number of digits: " + count);\
+  \}\
+\}\
+\
+Output:\
+\
+Enter your number:\
+10000\
+Number of digits: 5\
+\
+}
